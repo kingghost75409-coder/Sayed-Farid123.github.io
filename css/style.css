@@ -2,16 +2,16 @@
    TOKENS
 ========================================================== */
 :root {
-  --bg: #090D14;
-  --bg-alt: #0C1119;
-  --surface: #111827;
-  --surface-hover: #151E2E;
-  --border: #212B3B;
-  --text: #E7ECF4;
-  --text-muted: #8B95A7;
-  --accent: #22D3EE;
-  --accent-2: #818CF8;
-  --amber: #F5A524;
+  --bg: #FFFFFF;
+  --bg-alt: #F6F7F9;
+  --surface: #FFFFFF;
+  --surface-hover: #F1F3F6;
+  --border: #E3E6EB;
+  --text: #14181F;
+  --text-muted: #5B6472;
+  --accent: #0891B2;
+  --accent-2: #4F46E5;
+  --amber: #D97706;
 
   --font-display: "Space Grotesk", sans-serif;
   --font-body: "Inter", sans-serif;
@@ -147,7 +147,7 @@ ul { list-style: none; }
   left: 0;
   right: 0;
   z-index: 100;
-  background: rgba(9, 13, 20, 0.85);
+  background: rgba(255, 255, 255, 0.85);
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--border);
 }
@@ -236,8 +236,8 @@ ul { list-style: none; }
   position: absolute;
   inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+    linear-gradient(rgba(0,0,0,0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,0,0,0.05) 1px, transparent 1px);
   background-size: 46px 46px;
   mask-image: radial-gradient(ellipse at 30% 30%, black 10%, transparent 70%);
   pointer-events: none;
@@ -544,7 +544,7 @@ ul { list-style: none; }
 ========================================================== */
 .contact-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
 }
 
