@@ -86,7 +86,7 @@ let i=CE.findIndex(c=>c.id===new URLSearchParams(location.search).get("c"));if(i
 const c=CE[i],pv=CE[(i+CE.length-1)%CE.length],nx=CE[(i+1)%CE.length],go=x=>location.href="certificate.html?c="+x.id;
 document.title=c.title+" · Sayed Farid";
 const im=$("#im");im.src=`cert-${c.id}.jpg`;im.alt=c.title+" certificate";im.style.viewTransitionName="c-"+c.id;
-$("#info").innerHTML=`<span class="chip">${c.kind}</span><h1>${c.title}</h1><dl><dt>Awarded to</dt><dd>Sayed Farid</dd><dt>Offered by</dt><dd>${c.by}</dd><dt>Date</dt><dd>${c.date}</dd></dl><div class="btns"><a class="btn p" href="${c.url}" target="_blank" rel="noopener">Verify on Coursera ↗</a><a class="btn" href="cert-${c.id}.pdf" download>Download PDF ↓</a></div>${c.about?`<p style="margin-top:22px;color:var(--mute);font-size:.94rem">${c.about}</p>`:""}${c.courses?`<div class="cs"><h3>Courses in this specialization</h3><ul>${c.courses.map(x=>`<li>${x}</li>`).join("")}</ul></div>`:""}`;
+$("#info").innerHTML=`<span class="chip">${c.kind}</span><h1>${c.title}</h1><dl><dt>Awarded to</dt><dd>Sayed Farid</dd><dt>Offered by</dt><dd>${c.by}</dd><dt>Date</dt><dd>${c.date}</dd></dl><div class="btns"><a class="btn p" href="cert-${c.id}.pdf" download>Download PDF ↓</a></div>${c.about?`<p style="margin-top:22px;color:var(--mute);font-size:.94rem">${c.about}</p>`:""}${c.courses?`<div class="cs"><h3>Courses in this specialization</h3><ul>${c.courses.map(x=>`<li>${x}</li>`).join("")}</ul></div>`:""}`;
 $("#pn").innerHTML=[[pv,"← Previous"],[nx,"Next →"]].map(([x,l])=>`<a href="certificate.html?c=${x.id}"><img src="cert-${x.id}-thumb.jpg" alt=""><div><small>${l}</small><b>${x.title}</b></div></a>`).join("");
 
 /* tilt + glare + zoom */
