@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Certificate · Sayed Farid</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Unbounded:wght@300;500;700&family=Manrope:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+@view-transition{navigation:auto}
+:root{--bg:#050507;--ink:#F4F4F8;--mute:#8E8E9C;--a:#8B7BFF;--b:#F472B6;--line:rgba(255,255,255,.13);--card:rgba(255,255,255,.05)}
+[data-theme=light]{--bg:#F4F4F9;--ink:#0B0B12;--mute:#5D5D6C;--a:#5B45FF;--b:#DB2777;--line:rgba(0,0,0,.13);--card:rgba(0,0,0,.04)}
+*{margin:0;padding:0;box-sizing:border-box}
+body{background:radial-gradient(ellipse at 30% 0,color-mix(in srgb,var(--a) 22%,transparent),transparent 60%),var(--bg);color:var(--ink);font:400 1rem/1.65 Manrope,sans-serif;min-height:100vh;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+button{font:inherit;color:inherit}
+:focus-visible{outline:2px solid var(--a);outline-offset:3px}
+.w{max-width:1200px;margin:0 auto;padding:0 24px}
+h1,h3{font-family:Unbounded,sans-serif;font-weight:500;line-height:1.15;letter-spacing:-.02em}
+.top{display:flex;align-items:center;gap:14px;padding:22px 0}
+.top a.bk{display:inline-flex;gap:8px;align-items:center;padding:10px 18px;border:1px solid var(--line);border-radius:999px;font-size:.88rem;background:var(--card);transition:.2s}
+.top a.bk:hover{border-color:var(--a);transform:translateX(-4px)}
+.top b{font:500 .95rem Unbounded;margin-left:auto}
+#th{width:36px;height:36px;border-radius:50%;border:1px solid var(--line);background:transparent;cursor:pointer}
+.cv{display:grid;grid-template-columns:1.4fr 1fr;gap:44px;align-items:start;padding:20px 0 50px}
+.stage{position:relative;border-radius:18px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 50px 120px -40px var(--a);cursor:zoom-in;transform:perspective(1300px) rotateX(var(--rx,0deg)) rotateY(var(--ry,0deg));transition:transform .25s}
+.stage img{display:block;width:100%;height:auto;transition:transform .4s;transform-origin:var(--ox,50%) var(--oy,50%)}
+.stage.z{cursor:zoom-out;transform:none}
+.stage.z img{transform:scale(2.2)}
+.gl{position:absolute;inset:0;background:radial-gradient(circle at var(--gx,50%) var(--gy,50%),rgba(255,255,255,.5),transparent 55%);opacity:0;transition:opacity .25s;pointer-events:none}
+.stage:hover:not(.z) .gl{opacity:1}
+.hint{margin-top:14px;color:var(--mute);font-size:.82rem;text-align:center}
+@keyframes up{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:none}}
+.info>*{animation:up .8s cubic-bezier(.2,.8,.2,1) both}
+.info>:nth-child(2){animation-delay:.08s}.info>:nth-child(3){animation-delay:.16s}.info>:nth-child(4){animation-delay:.24s}.info>:nth-child(5){animation-delay:.32s}.info>:nth-child(6){animation-delay:.4s}
+.chip{display:inline-block;font-size:.76rem;padding:6px 14px;border:1px solid var(--line);border-radius:999px;color:var(--a);margin-bottom:18px}
+h1{font-size:clamp(1.6rem,3.4vw,2.5rem);margin-bottom:22px}
+dl{display:grid;grid-template-columns:110px 1fr;border-top:1px solid var(--line);margin-bottom:24px}
+dt,dd{padding:12px 0;border-bottom:1px solid var(--line);font-size:.92rem}
+dt{color:var(--mute)}
+.btns{display:flex;gap:10px;flex-wrap:wrap}
+.btn{display:inline-flex;gap:8px;padding:14px 24px;border-radius:999px;font-weight:600;font-size:.9rem;border:1px solid var(--line);background:var(--card);cursor:pointer;transition:transform .2s,border-color .2s}
+.btn:hover{transform:translateY(-3px);border-color:var(--a)}
+.btn.p{background:linear-gradient(90deg,var(--a),var(--b));color:#fff;border:0}
+.cs{margin-top:26px}
+.cs h3{font-size:.95rem;margin-bottom:10px}
+.cs li{list-style:none;padding:8px 0 8px 22px;border-top:1px solid var(--line);font-size:.9rem;color:var(--mute);position:relative}
+.cs li::before{content:"";position:absolute;left:2px;top:17px;width:7px;height:7px;border-radius:50%;background:var(--a)}
+.pn{display:grid;grid-template-columns:1fr 1fr;gap:14px;padding-bottom:60px}
+.pn a{display:grid;grid-template-columns:96px 1fr;gap:16px;align-items:center;padding:14px;border:1px solid var(--line);border-radius:20px;background:var(--card);transition:.25s}
+.pn a:hover{border-color:var(--a);transform:translateY(-4px)}
+.pn a:last-child{grid-template-columns:1fr 96px;text-align:right}
+.pn a:last-child img{order:2}
+.pn img{width:100%;border-radius:8px;display:block}
+.pn small{color:var(--a);font-size:.74rem}
+.pn b{display:block;font:500 .9rem Unbounded;line-height:1.25}
+@media(max-width:900px){.cv{grid-template-columns:1fr;gap:28px}.pn{grid-template-columns:1fr}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="w">
+  <div class="top"><a class="bk" href="index.html#certs">← Back to portfolio</a><b>Sayed Farid</b><button id="th" aria-label="Switch light or dark theme">☀</button></div>
+  <main class="cv">
+    <div>
+      <div class="stage" id="st"><img id="im" alt=""><i class="gl"></i></div>
+      <p class="hint">Click the certificate to zoom · use ← → to switch certificates</p>
+    </div>
+    <div class="info" id="info"></div>
+  </main>
+  <div class="pn" id="pn"></div>
+</div>
+<script>
+const $=s=>document.querySelector(s);
+const CE=[
+{id:"pipeline",title:"Data Pipeline Engineering & Analytics",kind:"Specialization · 8 courses",by:"Coursera",date:"Nov 5, 2026",url:"https://coursera.org/verify/specialization/RBXILZF5A4JK",about:"Covers automated ETL pipeline development with Apache Airflow and streaming technologies, SQL optimization and dimensional modeling, data transformation with Python and pandas, user-behavior analytics, and interactive dashboards.",courses:["Design and Optimize User Funnels","Automate, Ingest, and Validate Event Data","Optimize SQL: Build Fast Data Pipelines","Transform JSON & Fix Time Data","Transform Data: SQL & Pandas Mastery","Star Schemas & Track Changes","Build Interactive Dashboards for Meaningful Insights","Analyze Users & Optimize Product Retention"]},
+{id:"snowflake",title:"AI-Powered Data Engineering with Snowflake",kind:"Course certificate",by:"Edureka, via Coursera",date:"Oct 6, 2026",url:"https://coursera.org/verify/RMI23FDWU1YB"},
+{id:"aws",title:"Data Analytics and Databases on AWS",kind:"Course certificate",by:"Amazon Web Services, via Coursera",date:"Oct 5, 2026",url:"https://coursera.org/verify/A2DYOP1AGJNV"},
+{id:"sales",title:"Sales and CRM Overview",kind:"Course certificate",by:"Salesforce and Pathstream, via Coursera",date:"Oct 23, 2026",url:"https://coursera.org/verify/OC3N38LTFIMJ"}];
+const R=document.documentElement;let sv=null;try{sv=localStorage.getItem("t")}catch(e){}
+const setT=t=>{R.dataset.theme=t;$("#th").textContent=t==="dark"?"☀":"☾";try{localStorage.setItem("t",t)}catch(e){}};
+setT(sv||"dark");$("#th").onclick=()=>setT(R.dataset.theme==="dark"?"light":"dark");
+
+let i=CE.findIndex(c=>c.id===new URLSearchParams(location.search).get("c"));if(i<0)i=0;
+const c=CE[i],pv=CE[(i+CE.length-1)%CE.length],nx=CE[(i+1)%CE.length],go=x=>location.href="certificate.html?c="+x.id;
+document.title=c.title+" · Sayed Farid";
+const im=$("#im");im.src=`cert-${c.id}.jpg`;im.alt=c.title+" certificate";im.style.viewTransitionName="c-"+c.id;
+$("#info").innerHTML=`<span class="chip">${c.kind}</span><h1>${c.title}</h1><dl><dt>Awarded to</dt><dd>Sayed Farid</dd><dt>Offered by</dt><dd>${c.by}</dd><dt>Date</dt><dd>${c.date}</dd></dl><div class="btns"><a class="btn p" href="${c.url}" target="_blank" rel="noopener">Verify on Coursera ↗</a><a class="btn" href="cert-${c.id}.pdf" download>Download PDF ↓</a></div>${c.about?`<p style="margin-top:22px;color:var(--mute);font-size:.94rem">${c.about}</p>`:""}${c.courses?`<div class="cs"><h3>Courses in this specialization</h3><ul>${c.courses.map(x=>`<li>${x}</li>`).join("")}</ul></div>`:""}`;
+$("#pn").innerHTML=[[pv,"← Previous"],[nx,"Next →"]].map(([x,l])=>`<a href="certificate.html?c=${x.id}"><img src="cert-${x.id}-thumb.jpg" alt=""><div><small>${l}</small><b>${x.title}</b></div></a>`).join("");
+
+/* tilt + glare + zoom */
+const st=$("#st"),fine=matchMedia("(pointer:fine)").matches&&!matchMedia("(prefers-reduced-motion:reduce)").matches;
+st.addEventListener("pointermove",e=>{const r=st.getBoundingClientRect(),x=(e.clientX-r.left)/r.width,y=(e.clientY-r.top)/r.height;
+ st.style.setProperty("--ox",x*100+"%");st.style.setProperty("--oy",y*100+"%");
+ if(fine&&!st.classList.contains("z")){st.style.setProperty("--ry",(x-.5)*10+"deg");st.style.setProperty("--rx",(.5-y)*10+"deg");st.style.setProperty("--gx",x*100+"%");st.style.setProperty("--gy",y*100+"%")}});
+st.addEventListener("pointerleave",()=>{st.style.setProperty("--rx","0deg");st.style.setProperty("--ry","0deg")});
+st.onclick=()=>st.classList.toggle("z");
+addEventListener("keydown",e=>{if(e.key==="ArrowRight")go(nx);if(e.key==="ArrowLeft")go(pv);if(e.key==="Escape")st.classList.remove("z")});
+</script>
+</body>
+</html>
